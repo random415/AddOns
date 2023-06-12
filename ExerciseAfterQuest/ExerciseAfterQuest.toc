@@ -1,8 +1,0 @@
-## Interface: 11305
-## Title: Exercise After Quest
-## Notes: Prompts the user to do a physical exercise after completing a quest.
-## Author: Elias Howell
-## Version: 1.0.0
-## SavedVariables: None
-
-ExerciseAfterQuest.lua
