@@ -1,0 +1,8 @@
+## Interface: 11305
+## Title: Exercise After Quest or Level Up
+## Notes: Promotes fitness by suggesting an exercise to the player after they complete a quest or level up.
+## Author: Elias Howell
+## Version: 1.1.0
+## SavedVariables: None
+
+Exercise.lua
