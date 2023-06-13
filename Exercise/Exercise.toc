@@ -3,6 +3,6 @@
 ## Notes: Suggests an exercise after completing a quest or leveling up.
 ## Author: Elias Howell
 ## Version: 1.1.0
-## SavedVariables: None
+## SavedVariables: ExerciseList
 
 Exercise.lua

@@ -1,13 +1,25 @@
-local f = CreateFrame("Frame")
+local frame = CreateFrame("Frame")
+
+-- Function to track a quest
+local function TrackQuest(questIndex)
+    AddQuestWatch(questIndex, true)
+end
 
 -- Event handler function
-f:SetScript("OnEvent", function(self, event, arg1)
+frame:SetScript("OnEvent", function(self, event, arg1)
     if event == "QUEST_ACCEPTED" then
-        local questIndex = arg1
-        AddQuestWatch(questIndex, true)
-        DEFAULT_CHAT_FRAME:AddMessage("New quest added to the tracker!")
+        TrackQuest(arg1)
+    elseif event == "QUEST_LOG_UPDATE" or event == "PLAYER_LOGIN" then
+        for questIndex = 1, GetNumQuestLogEntries() do
+            if not IsQuestWatched(questIndex) then
+                TrackQuest(questIndex)
+            end
+        end
     end
 end)
 
--- Register event
-f:RegisterEvent("QUEST_ACCEPTED")
+-- Register events
+frame:RegisterEvent("QUEST_ACCEPTED")
+frame:RegisterEvent("QUEST_LOG_UPDATE")
+frame:RegisterEvent("PLAYER_LOGIN")
+
