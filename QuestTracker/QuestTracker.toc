@@ -1,5 +1,5 @@
 ## Interface: 90005
-## Title: QuestTracker
+## Title: Quest Tracker
 ## Notes: Automatically tracks quests when they are accepted.
 ## Author: Elias Howell
 ## Version: 1.0.0
