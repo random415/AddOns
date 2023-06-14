@@ -1,4 +1,4 @@
-## Interface: 90005
+## Interface: 11403
 ## Title: Quest Tracker
 ## Notes: Automatically tracks quests when they are accepted.
 ## Author: Elias Howell

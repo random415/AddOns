@@ -1,4 +1,4 @@
-## Interface: 11305
+## Interface: 11403
 ## Title: Exercise
 ## Notes: Suggests an exercise after completing a quest or leveling up.
 ## Author: Elias Howell

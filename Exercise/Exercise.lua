@@ -8,10 +8,10 @@ local exercises = {
 }
 
 -- Create frame and register events
-local f = CreateFrame("Frame")
-f:RegisterEvent("QUEST_TURNED_IN")
-f:RegisterEvent("PLAYER_LEVEL_UP")
-f:RegisterEvent("ADDON_LOADED")
+local frame = CreateFrame("Frame")
+frame:RegisterEvent("QUEST_TURNED_IN")
+frame:RegisterEvent("PLAYER_LEVEL_UP")
+frame:RegisterEvent("ADDON_LOADED")
 
 -- Initialize exercise list
 ExerciseList = ExerciseList or {}
@@ -36,7 +36,7 @@ uiFrame.scrollFrame.ScrollBar:SetPoint("BOTTOMRIGHT", uiFrame.scrollFrame, "BOTT
 uiFrame:Hide()
 
 -- Event handler
-f:SetScript("OnEvent", function(self, event, ...)
+frame:SetScript("OnEvent", function(self, event, ...)
     if event == "ADDON_LOADED" then
         local name = ...
         if name == "ExerciseAddon" then
