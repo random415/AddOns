@@ -1,8 +1,7 @@
 ## Interface: 11403
 ## Title: Exercise
-## Notes: Suggests an exercise after completing a quest or leveling up
+## Notes: Suggests an exercise after completing a quest or leveling up, and keeps track of exercises due
 ## Author: Elias Howell
-## Version: 1.1.0
-## SavedVariables: ExerciseList
+## Version: 1.0
 
 Exercise.lua
